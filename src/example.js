@@ -1,7 +1,7 @@
 // @flow
 
 import React, { useState, useEffect, useRef } from "react";
-import Select from "react-select";
+import Select, { StylesConfig, components } from "react-select";
 import { colourOptions } from "./docs/data";
 
 export default () => {
@@ -22,6 +22,10 @@ export default () => {
       }, 0);
     }
   };
+
+  const Control = ({ children, ...rest }) => (
+    <components.Control {...rest}>Sort by: {children}</components.Control>
+  );
 
   const styles = {
     control: (css) => ({
@@ -51,6 +55,7 @@ export default () => {
         styles={styles}
         onFocus={onFocus}
         openMenuOnFocus={true}
+        components={{ Control }}
         options={[
           ...colourOptions,
           {
