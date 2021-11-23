@@ -1,0 +1,14 @@
+{
+  "name": "react-select-fitcontent-width",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@atlaskit/tooltip": "17.0.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-select": "3.1.0",
+    "styled-components": "5.2.0"
+  },
+  "keywords": []
+}
